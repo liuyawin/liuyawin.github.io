@@ -1,0 +1,168 @@
+{
+  "sections": [
+    {
+      "id": 35,
+      "name": "小节1",
+      "preloads": [
+        {
+          "id": 1,
+          "materials": [
+            "37cad121-818d-11e7-9548-e39acc7cfcbc",
+            "4742ee31-818d-11e7-9548-e39acc7cfcbc",
+            "westwind/3c311a35-aa6a-4447-b105-fe9c4e95fdb6",
+            "westwind/37f0e7cb-64b3-4243-a4cb-899c85e75467",
+            "westwind/a2109d0d-5dfb-4f6a-be61-a5d9162feb97"
+          ],
+          "scenes": [
+            35,
+            36
+          ]
+        }
+      ],
+      "scenes": [
+        {
+          "elements": [
+            {
+              "id": 186,
+              "alias": "背景",
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 720,
+              "h": 1280,
+              "angle": 0,
+              "opacity": 100,
+              "horizontal": false,
+              "vertical": false,
+              "materialId": "37cad121-818d-11e7-9548-e39acc7cfcbc",
+              "type": "background"
+            },
+            {
+              "id": 187,
+              "alias": "q4avg-1240.png",
+              "x": 134,
+              "y": 470,
+              "z": 1,
+              "w": 542,
+              "h": 556,
+              "angle": 0,
+              "opacity": 100,
+              "horizontal": false,
+              "vertical": false,
+              "materialId": "4742ee31-818d-11e7-9548-e39acc7cfcbc",
+              "type": "figure"
+            },
+            {
+              "id": 183,
+              "alias": "姓名",
+              "x": 0,
+              "y": 910,
+              "z": 2,
+              "w": 600,
+              "h": 110,
+              "angle": 0,
+              "opacity": 100,
+              "type": "name",
+              "horizontal": false,
+              "vertical": false,
+              "materialId": "westwind/3c311a35-aa6a-4447-b105-fe9c4e95fdb6",
+              "text": "姓名",
+              "font": {
+                "color": "#472e22",
+                "family": "微软雅黑",
+                "size": 36,
+                "lineHeight": 48
+              }
+            },
+            {
+              "id": 184,
+              "alias": "对话",
+              "x": 0,
+              "y": 1010,
+              "z": 3,
+              "w": 720,
+              "h": 270,
+              "angle": 0,
+              "opacity": 100,
+              "materialId": "westwind/37f0e7cb-64b3-4243-a4cb-899c85e75467",
+              "type": "dialogue",
+              "horizontal": false,
+              "vertical": false,
+              "text": "对话",
+              "playback": "对话",
+              "font": {
+                "color": "#472e22",
+                "family": "微软雅黑",
+                "size": 36,
+                "lineHeight": 48
+              }
+            },
+            {
+              "id": 185,
+              "alias": "快捷菜单",
+              "x": 518,
+              "y": 0,
+              "z": 4,
+              "w": 202,
+              "h": 100,
+              "angle": 0,
+              "opacity": 100,
+              "horizontal": false,
+              "vertical": false,
+              "materialId": "westwind/a2109d0d-5dfb-4f6a-be61-a5d9162feb97",
+              "type": "button",
+              "interaction": {
+                "id": 3
+              }
+            }
+          ],
+          "id": 35,
+          "type": "normal",
+          "thumbnail": "assets\\thumbnail\\1-35-35.png",
+          "next": 36,
+          "transition": {
+            "type": 1
+          },
+          "sceneAnimation": {
+            "shake": {
+              "level": 1,
+              "duration": 2
+            }
+          },
+          "effectAnimation": {
+            "type": 0
+          },
+          "animations": [
+            {
+              "id": 1,
+              "target": {
+                "id": 187,
+                "type": 0
+              },
+              "trigger": {
+                "delay": 0,
+                "isFrom": false,
+                "type": 0
+              },
+              "move": {
+                "times": 1,
+                "isLoop": false,
+                "reverse": false,
+                "delay": 0,
+                "duration": 1000,
+                "x": -542,
+                "y": 470
+              }
+            }
+          ]
+        },
+        {
+          "id": 36,
+          "type": "end"
+        }
+      ],
+      "startSceneId": 35
+    }
+  ],
+  "startSectionId": 35
+}

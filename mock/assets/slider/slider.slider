@@ -1,0 +1,42 @@
+{
+    "type": "slider",
+    "uuid": "westwind/b8a71ef2-5471-4823-bbff-92aa9b3cb23e",
+    "x": 0,
+    "y": 0,
+    "h": 100,
+    "w": 522,
+    "subs": {
+        "back": {
+            "x": 50,
+            "y": 0,
+            "w": 422,
+            "h": 100,
+            "low": "./slider/back.png",
+            "type": "image"
+        },
+        "front": {
+            "x": 50,
+            "y": 0,
+            "w": 422,
+            "h": 100,
+            "low": "./slider/front.png",
+            "type": "image"
+        },
+        "pointerNormal": {
+            "x": 0,
+            "y": 0,
+            "w": 100,
+            "h": 100,
+            "low": "./slider/pointer_normal.png",
+            "type": "image"
+        },
+        "pointerHover": {
+            "x": 0,
+            "y": 0,
+            "w": 100,
+            "h": 100,
+            "low": "./slider/pointer_hover.png",
+            "type": "image"
+        }
+    }
+}

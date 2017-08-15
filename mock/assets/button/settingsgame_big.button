@@ -1,0 +1,32 @@
+{
+    "uuid": "westwind/d7b1f174-724a-4141-a5f2-7801cd04b188",
+    "type": "button",
+    "x": 0,
+    "y": 0,
+    "w": 620,
+    "h": 200,
+    "text": {
+        "y": 0,
+        "w": 620,
+        "h": 200,
+        "text": "模版按钮"
+    },
+    "subs": {
+        "normal": {
+            "x": 0,
+            "y": 0,
+            "w": 620,
+            "h": 200,
+            "low": "./settingsgame/normal2.png",
+            "type": "image"
+        },
+        "hover": {
+            "x": 0,
+            "y": 0,
+            "w": 620,
+            "h": 200,
+            "low": "./settingsgame/hover2.png",
+            "type": "image"
+        }
+    }
+}

@@ -1,0 +1,609 @@
+{
+  "templates": [
+    {
+      "id": 14,
+      "scenes": [
+        {
+          "elements": [
+            {
+              "id": 155,
+              "alias": "背景",
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 720,
+              "h": 1280,
+              "angle": 0,
+              "opacity": 100,
+              "horizontal": false,
+              "vertical": false,
+              "materialId": "westwind/7afea2c8-a328-4cfd-9938-dabb88840723",
+              "type": "background"
+            },
+            {
+              "id": 156,
+              "alias": "开始游戏",
+              "x": 50,
+              "y": 370,
+              "z": 1,
+              "w": 620,
+              "h": 200,
+              "angle": 0,
+              "opacity": 100,
+              "horizontal": false,
+              "vertical": false,
+              "materialId": "westwind/de7425c4-203e-4e74-926d-f2ebc2b2e073",
+              "type": "button",
+              "interaction": {
+                "id": 1
+              }
+            },
+            {
+              "id": 157,
+              "alias": "继续游戏",
+              "x": 50,
+              "y": 580,
+              "z": 2,
+              "w": 620,
+              "h": 120,
+              "angle": 0,
+              "opacity": 100,
+              "horizontal": false,
+              "vertical": false,
+              "materialId": "westwind/e8069000-f725-4631-824c-29505d1da59e",
+              "type": "button",
+              "interaction": {
+                "id": 6
+              }
+            },
+            {
+              "id": 158,
+              "alias": "游戏设置",
+              "x": 50,
+              "y": 710,
+              "z": 3,
+              "w": 620,
+              "h": 200,
+              "angle": 0,
+              "opacity": 100,
+              "horizontal": false,
+              "vertical": false,
+              "materialId": "westwind/d7b1f174-724a-4141-a5f2-7801cd04b189",
+              "type": "button",
+              "interaction": {
+                "id": 2
+              }
+            }
+          ],
+          "id": 14,
+          "type": "sketch"
+        }
+      ],
+      "type": "title"
+    },
+    {
+      "id": 15,
+      "scenes": [
+        {
+          "elements": [
+            {
+              "id": 159,
+              "alias": "姓名",
+              "x": 0,
+              "y": 910,
+              "z": 0,
+              "w": 600,
+              "h": 110,
+              "angle": 0,
+              "opacity": 100,
+              "type": "name",
+              "horizontal": false,
+              "vertical": false,
+              "materialId": "westwind/3c311a35-aa6a-4447-b105-fe9c4e95fdb6",
+              "text": "姓名",
+              "font": {
+                "color": "#472e22",
+                "family": "微软雅黑",
+                "size": 36,
+                "lineHeight": 48
+              }
+            },
+            {
+              "id": 160,
+              "alias": "对话",
+              "x": 0,
+              "y": 1010,
+              "z": 1,
+              "w": 720,
+              "h": 270,
+              "angle": 0,
+              "opacity": 100,
+              "materialId": "westwind/37f0e7cb-64b3-4243-a4cb-899c85e75467",
+              "type": "dialogue",
+              "horizontal": false,
+              "vertical": false,
+              "text": "对话",
+              "playback": "",
+              "font": {
+                "color": "#472e22",
+                "family": "微软雅黑",
+                "size": 36,
+                "lineHeight": 48
+              }
+            },
+            {
+              "id": 161,
+              "alias": "快捷菜单",
+              "x": 518,
+              "y": 0,
+              "z": 2,
+              "w": 202,
+              "h": 100,
+              "angle": 0,
+              "opacity": 100,
+              "horizontal": false,
+              "vertical": false,
+              "materialId": "westwind/a2109d0d-5dfb-4f6a-be61-a5d9162feb97",
+              "type": "button",
+              "interaction": {
+                "id": 3
+              }
+            }
+          ],
+          "id": 15,
+          "type": "sketch"
+        }
+      ],
+      "type": "scene"
+    },
+    {
+      "id": 16,
+      "scenes": [
+        {
+          "elements": [
+            {
+              "id": 162,
+              "alias": "背景",
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 720,
+              "h": 1280,
+              "angle": 0,
+              "opacity": 100,
+              "horizontal": false,
+              "vertical": false,
+              "materialId": "westwind/8c62f33f-a1fc-4c3d-821d-e33b272876bc",
+              "type": "background"
+            },
+            {
+              "id": 163,
+              "alias": "保存进度",
+              "x": 50,
+              "y": 230,
+              "z": 1,
+              "w": 620,
+              "h": 120,
+              "angle": 0,
+              "opacity": 100,
+              "horizontal": false,
+              "vertical": false,
+              "materialId": "westwind/1ab25ec1-dada-4ff3-8050-7963a327cd55",
+              "type": "button",
+              "interaction": {
+                "id": 5
+              }
+            },
+            {
+              "id": 164,
+              "alias": "读取进度",
+              "x": 50,
+              "y": 390,
+              "z": 2,
+              "w": 620,
+              "h": 120,
+              "angle": 0,
+              "opacity": 100,
+              "horizontal": false,
+              "vertical": false,
+              "materialId": "westwind/c6eb200a-7ad7-4d4b-a9c9-333bd480dca1",
+              "type": "button",
+              "interaction": {
+                "id": 6
+              }
+            },
+            {
+              "id": 165,
+              "alias": "剧情回放",
+              "x": 50,
+              "y": 550,
+              "z": 3,
+              "w": 620,
+              "h": 120,
+              "angle": 0,
+              "opacity": 100,
+              "horizontal": false,
+              "vertical": false,
+              "materialId": "westwind/be4fad28-28f4-482f-a04f-4e1ecb2b73e6",
+              "type": "button",
+              "interaction": {
+                "id": 22
+              }
+            },
+            {
+              "id": 166,
+              "alias": "游戏设置",
+              "x": 50,
+              "y": 710,
+              "z": 4,
+              "w": 620,
+              "h": 120,
+              "angle": 0,
+              "opacity": 100,
+              "horizontal": false,
+              "vertical": false,
+              "materialId": "westwind/07c1bdb1-2f9a-47d6-a90c-cc50dbb4dd0f",
+              "type": "button",
+              "interaction": {
+                "id": 2
+              }
+            },
+            {
+              "id": 167,
+              "alias": "标题界面",
+              "x": 50,
+              "y": 870,
+              "z": 5,
+              "w": 620,
+              "h": 120,
+              "angle": 0,
+              "opacity": 100,
+              "horizontal": false,
+              "vertical": false,
+              "materialId": "westwind/8e3daa64-64ce-44f0-9299-41965f59ee15",
+              "type": "button",
+              "interaction": {
+                "id": 4
+              }
+            },
+            {
+              "id": 168,
+              "alias": "返回游戏",
+              "x": 50,
+              "y": 1062,
+              "z": 6,
+              "w": 620,
+              "h": 200,
+              "angle": 0,
+              "opacity": 100,
+              "horizontal": false,
+              "vertical": false,
+              "materialId": "westwind/2fac6839-5df1-49f7-bdad-cee2c33db174",
+              "type": "button",
+              "interaction": {
+                "id": 10
+              }
+            }
+          ],
+          "id": 16,
+          "type": "sketch"
+        }
+      ],
+      "type": "menu"
+    },
+    {
+      "id": 17,
+      "scenes": [
+        {
+          "elements": [
+            {
+              "id": 169,
+              "alias": "选项",
+              "x": 36,
+              "y": 472,
+              "z": 0,
+              "w": 648,
+              "h": 104,
+              "angle": 0,
+              "opacity": 100,
+              "horizontal": false,
+              "vertical": false,
+              "materialId": "westwind/40aeb066-8746-47ac-afb7-9b21a960ede4",
+              "type": "option",
+              "text": "选项",
+              "font": {
+                "color": "#472e22",
+                "family": "微软雅黑",
+                "size": 36,
+                "lineHeight": 48
+              }
+            }
+          ],
+          "id": 17,
+          "type": "sketch"
+        }
+      ],
+      "type": "option"
+    },
+    {
+      "id": 18,
+      "scenes": [
+        {
+          "elements": [
+            {
+              "id": 170,
+              "alias": "背景",
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 720,
+              "h": 1280,
+              "angle": 0,
+              "opacity": 100,
+              "horizontal": false,
+              "vertical": false,
+              "materialId": "westwind/6851926b-720f-4d54-a975-e2150adadd05",
+              "type": "background"
+            },
+            {
+              "id": 171,
+              "alias": "剧情回放框",
+              "x": 70,
+              "y": 240,
+              "z": 1,
+              "w": 580,
+              "h": 760,
+              "angle": 0,
+              "opacity": 100,
+              "horizontal": false,
+              "vertical": false,
+              "materialId": "westwind/f418baec-9b3c-4099-b13e-5ec08713f20b",
+              "type": "playback",
+              "text": "剧情回放框",
+              "font": {
+                "color": "#472e22",
+                "family": "微软雅黑",
+                "size": 36,
+                "lineHeight": 48
+              },
+              "interaction": {
+                "id": 23
+              }
+            },
+            {
+              "id": 172,
+              "alias": "返回游戏",
+              "x": 50,
+              "y": 1062,
+              "z": 2,
+              "w": 620,
+              "h": 200,
+              "angle": 0,
+              "opacity": 100,
+              "horizontal": false,
+              "vertical": false,
+              "materialId": "westwind/2fac6839-5df1-49f7-bdad-cee2c33db174",
+              "type": "button",
+              "interaction": {
+                "id": 10
+              }
+            }
+          ],
+          "id": 18,
+          "type": "sketch"
+        }
+      ],
+      "type": "playback"
+    },
+    {
+      "id": 19,
+      "scenes": [
+        {
+          "elements": [
+            {
+              "id": 173,
+              "alias": "背景",
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 720,
+              "h": 1280,
+              "angle": 0,
+              "opacity": 100,
+              "horizontal": false,
+              "vertical": false,
+              "materialId": "westwind/ccbb0c49-df68-4e3d-96aa-f02b2ed7677c",
+              "type": "background"
+            },
+            {
+              "id": 174,
+              "alias": "存档",
+              "x": 60,
+              "y": 210,
+              "z": 1,
+              "w": 620,
+              "h": 800,
+              "angle": 0,
+              "opacity": 100,
+              "horizontal": false,
+              "vertical": false,
+              "materialId": "westwind/16d11e2e-dfea-4905-bd75-e496bde342bd",
+              "type": "saved",
+              "total": 3,
+              "margin": 40,
+              "font": {
+                "size": 36,
+                "color": "#472e22",
+                "family": "微软雅黑",
+                "lineHeight": 48
+              },
+              "sectionName": "小节名称",
+              "date": "年.月.日"
+            },
+            {
+              "id": 175,
+              "alias": "返回游戏",
+              "x": 50,
+              "y": 1062,
+              "z": 2,
+              "w": 620,
+              "h": 200,
+              "angle": 0,
+              "opacity": 100,
+              "horizontal": false,
+              "vertical": false,
+              "materialId": "westwind/2fac6839-5df1-49f7-bdad-cee2c33db174",
+              "type": "button",
+              "interaction": {
+                "id": 10
+              }
+            }
+          ],
+          "id": 19,
+          "type": "sketch"
+        }
+      ],
+      "type": "saved"
+    },
+    {
+      "id": 20,
+      "scenes": [
+        {
+          "elements": [
+            {
+              "id": 176,
+              "alias": "背景",
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 720,
+              "h": 1280,
+              "angle": 0,
+              "opacity": 100,
+              "horizontal": false,
+              "vertical": false,
+              "materialId": "westwind/09b881a8-f4e5-4a61-b526-900bc5405ab7",
+              "type": "background"
+            },
+            {
+              "id": 177,
+              "alias": "自动播放开关",
+              "x": 381,
+              "y": 234,
+              "z": 1,
+              "w": 240,
+              "h": 100,
+              "angle": 0,
+              "opacity": 100,
+              "materialId": "westwind/82afdab4-80b4-4a80-9457-f485c9d9178f",
+              "type": "switcher",
+              "horizontal": false,
+              "vertical": false,
+              "interaction": {
+                "id": 7
+              },
+              "isOff": false
+            },
+            {
+              "id": 178,
+              "alias": "全屏模式开关",
+              "x": 381,
+              "y": 386,
+              "z": 2,
+              "w": 240,
+              "h": 100,
+              "angle": 0,
+              "opacity": 100,
+              "materialId": "westwind/82afdab4-80b4-4a80-9457-f485c9d9178f",
+              "type": "switcher",
+              "horizontal": false,
+              "vertical": false,
+              "interaction": {
+                "id": 8
+              },
+              "isOff": false
+            },
+            {
+              "id": 179,
+              "alias": "BGM滑动条",
+              "x": 99,
+              "y": 620,
+              "z": 3,
+              "w": 522,
+              "h": 100,
+              "angle": 0,
+              "opacity": 100,
+              "materialId": "westwind/b8a71ef2-5471-4823-bbff-92aa9b3cb23f",
+              "horizontal": false,
+              "vertical": false,
+              "type": "slider",
+              "interaction": {
+                "id": 13
+              },
+              "percent": 100
+            },
+            {
+              "id": 180,
+              "alias": "音效滑动条",
+              "x": 99,
+              "y": 776,
+              "z": 4,
+              "w": 522,
+              "h": 100,
+              "angle": 0,
+              "opacity": 100,
+              "materialId": "westwind/b8a71ef2-5471-4823-bbff-92aa9b3cb23f",
+              "horizontal": false,
+              "vertical": false,
+              "type": "slider",
+              "interaction": {
+                "id": 14
+              },
+              "percent": 100
+            },
+            {
+              "id": 181,
+              "alias": "语音滑动条",
+              "x": 99,
+              "y": 932,
+              "z": 5,
+              "w": 522,
+              "h": 100,
+              "angle": 0,
+              "opacity": 100,
+              "materialId": "westwind/b8a71ef2-5471-4823-bbff-92aa9b3cb23f",
+              "horizontal": false,
+              "vertical": false,
+              "type": "slider",
+              "interaction": {
+                "id": 15
+              },
+              "percent": 100
+            },
+            {
+              "id": 182,
+              "alias": "返回游戏",
+              "x": 50,
+              "y": 1062,
+              "z": 6,
+              "w": 620,
+              "h": 200,
+              "angle": 0,
+              "opacity": 100,
+              "horizontal": false,
+              "vertical": false,
+              "materialId": "westwind/2fac6839-5df1-49f7-bdad-cee2c33db174",
+              "type": "button",
+              "interaction": {
+                "id": 10
+              }
+            }
+          ],
+          "id": 20,
+          "type": "sketch"
+        }
+      ],
+      "type": "setting"
+    }
+  ]
+}

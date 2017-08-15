@@ -1,0 +1,25 @@
+{
+    "uuid": "westwind/431e48d7-e1d6-4846-baf3-614bf061fb71",
+    "x": 0,
+    "y": 0,
+    "w": 600,
+    "h": 110,
+    "type": "textbox",
+    "text": {
+        "x": 20,
+        "y": 30,
+        "w": 600,
+        "h": 56,
+        "text": "textbox"
+    },
+    "subs": {
+        "background": {
+            "x": 0,
+            "y": 0,
+            "w": 600,
+            "h": 110,
+            "low": "./dialogname/namebg.png",
+            "type": "image"
+        }
+    }
+}

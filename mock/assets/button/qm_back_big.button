@@ -1,0 +1,33 @@
+{
+    "uuid": "westwind/2fac6839-5df1-49f7-bdad-cee2c33db173",
+    "type": "button",
+    "x": 0,
+    "y": 0,
+    "w": 620,
+    "h": 200,
+    "text": {
+        "x": 0,
+        "y": 0,
+        "w": 620,
+        "h": 200,
+        "text": "模版按钮"
+    },
+    "subs": {
+        "normal": {
+            "x": 0,
+            "y": 0,
+            "w": 620,
+            "h": 200,
+            "low": "./qm_back/normal1.png",
+            "type": "image"
+        },
+        "hover": {
+            "x": 0,
+            "y": 0,
+            "w": 620,
+            "h": 200,
+            "low": "./qm_back/hover1.png",
+            "type": "image"
+        }
+    }
+}

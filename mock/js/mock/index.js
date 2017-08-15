@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const Theme = require("./data/theme");
+exports.theme = Theme.theme;
+const Game = require("./data/game");
+exports.game = Game.game;
+const Story = require("./data/story");
+exports.story = Story.story;
+const Material = require("./data/material");
+exports.materials = Material.materials;
