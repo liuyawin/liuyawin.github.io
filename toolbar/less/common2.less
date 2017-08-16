@@ -1,0 +1,144 @@
+@toolbar-width:52px;
+.toolbar{
+    position: fixed;
+    left: 50%;
+    bottom: 5px;
+    margin-left: -@toolbar-width / 2;
+}
+.toolbar-item{
+    position: relative;
+    display: block;
+    width: @toolbar-width;
+    height: @toolbar-width;
+    margin-top: 1px;
+}
+.toolbar-item:hover{
+    .toolbar-btn:before{
+        top:-@toolbar-width;
+    }
+    .toolbar-btn:after{
+        top:0;
+    }
+    &:after{
+        opacity: 1;
+        filter: alpha(opacity=1);
+        transform: scale(1);
+    }
+}
+.toolbar-item:after{
+    content: "";//after伪类第一个必须为content，否则无效
+    position: absolute;
+    right: @toolbar-width - 6;
+    bottom: -10px;
+    width: 172px;
+    background-image: url(../img/toolbar_img.png);
+    background-repeat: no-repeat;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    transform-origin: 95% 95%;
+    transform: scale(0.01);
+    transition: all 1s;
+}
+.toolbar-item-weixin{ 
+    .toolbar-btn:before{
+        content: "\e900";
+    }
+    .toolbar-btn:after{
+        content: "公众\A账号";
+    }
+}
+.toolbar-item-weixin:after{
+    content: "";
+    height: 212px;
+    background-position: 0 0;
+}
+.toolbar-item-feedback{
+    .toolbar-btn:before{
+        content: "\e922";
+    }
+    .toolbar-btn:after{
+        content: "意见\A反馈";
+    }
+}
+.toolbar-item-app{
+    .toolbar-btn:before{
+        content: "\e958";
+    }
+    .toolbar-btn:after{
+        content: "APP\A下载";
+    }
+}
+.toolbar-item-app:after{
+    content: "";
+    height: 194px;
+    background-position: 0 -222px;
+}
+.toolbar-item-top{
+    .toolbar-btn:before{
+        content: "\ea32";
+    }
+    .toolbar-btn:after{
+        content: "返回\A顶部";//\A是content中的换行，要搭配后面的white-space: pre;
+    }
+}
+@font-face {
+    font-family: 'icomoon';
+    src:    url('fonts/icomoon.eot?fe0177');
+    src:    url('fonts/icomoon.eot?fe0177#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?fe0177') format('truetype'),
+        url('fonts/icomoon.woff?fe0177') format('woff'),
+        url('fonts/icomoon.svg?fe0177#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.toolbar-btn{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: @toolbar-width;
+    height: @toolbar-width;
+    overflow: hidden;
+    
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.toolbar-btn:before{//icon
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: @toolbar-width;
+    height: @toolbar-width;
+    background-color: #d0d6d9;
+    font-size: 30px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: @toolbar-width;
+    transition: top 1s;
+}
+.toolbar-btn:after{//text
+    content: "";
+    position: absolute;
+    left: 0;
+    top: @toolbar-width;
+    width: @toolbar-width;
+    height: @toolbar-width;
+    background-color: #98a1a0;
+    padding-top: 12px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    line-height: 1.2;
+    transition: top 1s;
+    white-space: pre;
+}

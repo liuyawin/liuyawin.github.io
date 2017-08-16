@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'icomoon';
+    src:    url('fonts/icomoon.eot?fe0177');
+    src:    url('fonts/icomoon.eot?fe0177#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?fe0177') format('truetype'),
+        url('fonts/icomoon.woff?fe0177') format('woff'),
+        url('fonts/icomoon.svg?fe0177#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-wechat:before {
+    content: "\e900";
+}
+.icon-file-text:before {
+    content: "\e922";
+}
+.icon-mobile:before {
+    content: "\e958";
+}
+.icon-arrow-up:before {
+    content: "\ea32";
+}
+
+//以上是字体样式
+@toolbar-width:52px;
+.toolbar{
+    position: fixed;
+    left: 50%;
+    bottom: 5px;
+    margin-left: @toolbar-width / 2;
+}
+.toolbar-item{
+    position: relative;
+    display: block;
+    width: @toolbar-width;
+    height: @toolbar-width;
+    margin-top: 1px;
+}
+.toolbar-item:hover{
+    .toolbar-icon{
+        top:-@toolbar-width;
+    }
+    .toolbar-text{
+        top:0;
+    }
+    .toolbar-layer{
+        opacity: 1;
+        filter: alpha(opacity=0);
+        transform: scale(1);
+        transition: all 1s;
+    }
+}
+.toolbar-btn{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: @toolbar-width;
+    height: @toolbar-width;
+    overflow: hidden;
+}
+.toolbar-icon{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: @toolbar-width;
+    height: @toolbar-width;
+    background-color: #d0d6d9;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    line-height: @toolbar-width;
+    transition: top 1s;
+}
+.toolbar-text{
+    position: absolute;
+    left: 0;
+    top: @toolbar-width;
+    width: @toolbar-width;
+    height: @toolbar-width;
+    background-color: #98a1a0;
+    padding-top: 12px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    line-height: 1.2;
+    transition: top 1s;
+}
+.toolbar-layer{
+    position: absolute;
+    right: @toolbar-width - 6;
+    bottom: -10px;
+    width: 172px;
+    background-image: url(../img/toolbar_img.png);
+    background-repeat: no-repeat;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    transform-origin: 95% 95%;
+    transform: scale(0.01);
+    transition: all 1s;
+}
+.toolbar-layer-weixin{
+    height: 212px;
+    background-position: 0 0;
+}
+.toolbar-layer-app{
+    height: 194px;
+    background-position: 0 -222px;
+}
+
+

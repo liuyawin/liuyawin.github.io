@@ -1,0 +1,199 @@
+/* 常量 */
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: "微软雅黑";
+}
+body {
+  background: #EEE9E9;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.aside-font-color {
+  color: rgba(0, 0, 0, 0.6);
+}
+.header {
+  width: 100%;
+  height: 64px;
+  background-color: #303030;
+  -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.8);
+}
+.header nav {
+  position: relative;
+  height: 100%;
+  border-bottom: 1px solid #C2C2C2;
+}
+.header nav ul {
+  position: absolute;
+  height: 100%;
+  margin-left: 30%;
+}
+.header nav ul li {
+  float: left;
+  width: 120px;
+  list-style: none;
+  height: 100%;
+}
+.header nav ul li a {
+  margin-top: 20%;
+  width: 100%;
+  font-size: 16px;
+  text-align: center;
+  color: #F0F0F0;
+  font-weight: bold;
+  letter-spacing: 4px;
+  display: inline-block;
+  text-decoration: none;
+}
+.main {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+aside {
+  width: 240px;
+  min-height: 320px;
+  background-color: white;
+  /* Gecko browsers */
+  -moz-border-radius: 8px;
+  /* Webkit browsers */
+  -webkit-border-radius: 8px;
+  /* W3C syntax - likely to be standard so use for future proofing */
+  border-radius: 8px;
+  margin-bottom: 24px;
+  float: left;
+}
+aside .gavater {
+  position: relative;
+  height: 94px;
+  margin-bottom: 96px;
+  background: #6E6E6E;
+  -moz-border-radius-topleft: 8px;
+  -moz-border-radius-topright: 8px;
+  -webkit-border-top-left-radius: 8px;
+  -webkit-border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+aside .gavater #img-head {
+  position: absolute;
+  margin: 24px 50px;
+  width: 140px;
+  height: 140px;
+  border: 4px solid white;
+  /* Gecko browsers */
+  -moz-border-radius: 140px;
+  /* Webkit browsers */
+  -webkit-border-radius: 140px;
+  /* W3C syntax - likely to be standard so use for future proofing */
+  border-radius: 140px;
+}
+aside address {
+  font-size: 14px;
+  font-family: cursive;
+  margin-bottom: 6px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6);
+}
+aside hr {
+  width: 76%;
+  margin: 16px auto;
+}
+aside p {
+  font-size: 16px;
+  margin-top: 12px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6);
+}
+aside h5 {
+  margin-top: 24px;
+  height: 18px;
+  color: white;
+  padding: 8px 24px;
+  font-size: 14px;
+  background: #6E6E6E;
+}
+aside ul li {
+  list-style: none;
+  margin: 12px 24px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+aside ul li a {
+  color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+}
+aside .section-img-list {
+  padding: 16px;
+  margin-bottom: 36px;
+  overflow: hidden;
+}
+aside .section-img-list img {
+  width: 60px;
+  height: 60px;
+  margin: 4px;
+  float: left;
+}
+.section-main {
+  background-color: #FFFFFF;
+  /* Gecko browsers */
+  -moz-border-radius: 8px;
+  /* Webkit browsers */
+  -webkit-border-radius: 8px;
+  /* W3C syntax - likely to be standard so use for future proofing */
+  border-radius: 8px;
+  margin: 36px auto 48px 300px;
+}
+.section-main .article {
+  padding-top: 54px;
+  padding-bottom: 54px;
+  margin-right: 54px;
+}
+.section-main .article .header-artical {
+  border-left: 6px solid #6E6E6E;
+}
+.section-main .article .header-artical h4 {
+  font-size: 24px;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 12px;
+  padding-left: 54px;
+}
+.section-main .article .header-artical .div-inf {
+  margin-left: 54px;
+  margin-bottom: 24px;
+}
+.section-main .article .header-artical .div-inf img {
+  margin-right: 6px;
+  width: 14px;
+}
+.section-main .article .header-artical .div-inf label {
+  bottom: 14px;
+  margin-right: 12px;
+}
+.section-main .article p {
+  margin-top: 12px;
+  line-height: 24px;
+  margin-left: 64px;
+  color: #303030;
+}
+footer {
+  width: 100%;
+  height: 120px;
+  background: #242221;
+}
