@@ -1,0 +1,16 @@
+.vo_linkage select{
+    border: 1px solid #ccc;
+    background: #fff;
+    border-radius: 5px;
+    color: #333;
+    font-size: 14px;
+    outline: none;
+    width: 120px;
+    height: 28px;
+    margin-right: 10px;
+    box-shadow: 0 0 5px #eee;
+}
+
+.vo_linkage label{
+    margin-right: 4px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="linkage.css">
+</head>
+
+<body>
+    <div class="vo_linkage">
+        <label for="select_0">省</label>
+        <select data-name="select_0">
+            <option value="">请选择省</option>
+        </select>
+        <label for="select_1">市</label>
+        <select data-name="select_1">
+            <option value="">请选择市</option>
+        </select>
+        <label for="select_2">区</label>
+        <select data-name="select_2">
+            <option value="">请选择区</option>
+        </select>
+    </div>
+
+    <script src="../jquery-1.11.3.min.js"></script>
+    <script src="linkage.js"></script>
+    <script src="data.js"></script>
+    <script>
+        $('.vo_linkage').vo_linkage(data, function (result) {
+            console.log(result);
+        });
+    </script>
+</body>
+
+</html>
