@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .breadcrumb{
+            list-style: none;
+        }
+        .breadcrumb li{
+            display: inline-block;
+            width: 54px;
+            height: 32px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #3498db;
+            padding: 8px 0 0 24px;
+            text-align: center;
+            position: relative;
+            margin-right: 2px;
+        }
+
+        .breadcrumb .pre_triangle:before {
+            content: '';
+            border-left: 20px solid white;
+            border-top: 20px solid #3498db;
+            border-bottom: 20px solid #3498db;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .breadcrumb .after_triangle:after {
+            content: '';
+            border-left: 20px solid #3498db;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+            position: absolute;
+            top: 0;
+            right: -20px;
+            z-index: 999;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="breadcrumb">
+        <li class="pre_triangle after_triangle">首页</li>
+        <li class="pre_triangle after_triangle">生活</li>
+        <li class="pre_triangle after_triangle">美食</li>
+        <li class="pre_triangle after_triangle">炸鸡</li>
+    </ul>
+</body>
+
+</html>
