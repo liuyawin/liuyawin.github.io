@@ -1,0 +1,19 @@
+.amplifier{
+    cursor: move;
+}
+
+.amplifier .mask{
+    width: 200px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+}
+
+.amplify_area{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    border: 1px solid #D4D4D4;
+    right: -400px;
+}

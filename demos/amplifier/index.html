@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .amplifier{
+            margin: 32px;
+            display: inline-block;
+            position: relative;
+        }
+        .small_img{
+            width: 300px;
+            height: 370px;
+            border: 1px solid #D4D4D4;
+        }
+    </style>
+    <link rel="stylesheet" href="amplifier.css">
+</head>
+
+<body>
+    <div class="amplifier">
+        <img class="small_img" src="img/small.jpg" alt="small">
+    </div>
+    
+    <script type="text/javascript" src="../jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="amplifier.js"></script>
+    <script type="text/javascript">
+        $('.amplifier').amplifier({
+            bigImgUrl: 'img/big.jpg'
+        });
+    </script>
+</body>
+
+</html>
