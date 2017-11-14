@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>气泡框</title>
+    <style>
+        .container {
+            width: 200px;
+            height: 160px;
+            margin: 120px 180px;
+            border: 1px solid red;
+        }
+        .btn_list{
+            margin: 32px 200px;
+        }
+        button{
+            width: 32px;
+            height: 24px;
+        }
+    </style>
+    <link rel="stylesheet" href="bubble-box.css">
+</head>
+
+<body>
+    <div class="container"></div>
+    <div class="btn_list">
+        <button onclick="createBubbleBox('top')">上</button>
+        <button onclick="createBubbleBox('bottom')">下</button>
+        <button onclick="createBubbleBox('left')">左</button>
+        <button onclick="createBubbleBox('right')">右</button>
+    </div>
+    <script type="text/javascript" src="../jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="bubble-box.js"></script>
+    <script type="text/javascript">
+        function createBubbleBox(direction) {
+            var $container = $('.container');
+            $container.empty();
+            $container.bubbleBox({
+                direction: direction,
+                message: '这已不知是第几日了，我总在落着雨的早晨醒来，窗外照例是一片灰镑镑的天空，没有黎明时的曙光，没有风，没有鸟叫。后院的小树都很寥寂的静立在雨中，无论从那一个窗口望出去，总有雨水在冲流着。除了雨水之外，听不见其他的声音，在这时分里，一切全是静止的。'
+            });
+        }
+    </script>
+</body>
+
+</html>

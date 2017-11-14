@@ -1,0 +1,87 @@
+.bubble_box {
+    position: absolute;
+    width: 160px;
+    height: 100px;
+    border: 2px solid #09f;
+    border-radius: 4px;
+    white-space:normal;
+    word-break:break-all;
+    word-wrap:break-word; 
+}
+
+.message_container{
+    padding: 8px 12px;
+    overflow: auto;
+}
+
+.triangle{
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+
+.left .triangle{
+    border-left: 10px solid #09f;
+    border-top: 10px dashed white;
+    border-bottom: 10px dashed white;
+    right: -12px;
+    font-size:0;
+}
+
+.left .blank_triangle{
+    border-left: 10px solid white;
+    border-top: 10px dashed transparent;
+    border-bottom: 10px dashed transparent;
+    right: -9px;
+    font-size:0;
+}
+
+.right .triangle{
+    border-right: 10px solid #09f;
+    border-top: 10px dashed white;
+    border-bottom: 10px dashed white;
+    left: -12px;
+    font-size:0;
+}
+
+
+.right .blank_triangle{
+    border-right: 10px solid white;
+    border-top: 10px dashed transparent;
+    border-bottom: 10px dashed transparent;
+    left: -9px;
+    font-size:0;
+}
+
+.bottom .triangle{
+    border-bottom: 10px solid #09f;
+    border-left: 10px dashed white;
+    border-right: 10px dashed white;
+    top: -12px;
+    font-size:0;
+}
+
+
+.bottom .blank_triangle{
+    border-bottom: 10px solid white;
+    border-left: 10px dashed transparent;
+    border-right: 10px dashed transparent;
+    top: -9px;
+    font-size:0;
+}
+
+.top .triangle{
+    border-top: 10px solid #09f;
+    border-left: 10px dashed white;
+    border-right: 10px dashed white;
+    bottom: -12px;
+    font-size:0;
+}
+
+.top .blank_triangle{
+    border-top: 10px solid white;
+    border-left: 10px dashed transparent;
+    border-right: 10px dashed transparent;
+    bottom: -9px;
+    font-size:0;
+}
