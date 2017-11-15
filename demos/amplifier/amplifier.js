@@ -48,17 +48,18 @@ Amplifier.prototype = {
                 x: Math.ceil(e.pageX || e.clientX),
                 y: Math.ceil(e.pageY || e.clientY)
             }
+            
+            //移动mask
+            _this.moveMask();
+            //移动大图
+            _this.moveBigImage();
+            
             //如果移出去了
             if (!_this.checkPosition()) {
                 _this.destroyMask();
                 _this.destroyBigImageArea();
                 $(document).unbind('mousemove', handleMouseMove);
-                return;
             }
-            //移动mask
-            _this.moveMask();
-            //移动大图
-            _this.moveBigImage();
         }
     },
 
