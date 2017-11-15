@@ -1,5 +1,5 @@
 
-function JigsawPuzzle(container, level, imageUrl) {
+function Puzzle(container, level, imageUrl) {
     if (!container) {
         return;
     }
@@ -18,7 +18,7 @@ function JigsawPuzzle(container, level, imageUrl) {
     this.imageHeight = this.container.offsetHeight / this.lineCount - 2;
 }
 
-JigsawPuzzle.prototype.placeImage = function () {
+Puzzle.prototype.placeImage = function () {
 
     for (var i = 0; i < this.lineCount; i++) {
         for (var j = 0; j < this.lineCount; j++) {
@@ -32,7 +32,7 @@ JigsawPuzzle.prototype.placeImage = function () {
     }
 }
 
-JigsawPuzzle.prototype.getInitPositionArr = function () {
+Puzzle.prototype.getInitPositionArr = function () {
     var arr = [];
     for (var i = 0; i < this.lineCount; i++) {
         for (var j = 0; j < this.lineCount; j++) {
@@ -44,7 +44,7 @@ JigsawPuzzle.prototype.getInitPositionArr = function () {
     });
 }
 
-JigsawPuzzle.prototype.initGame = function () {
+Puzzle.prototype.initGame = function () {
     var initPostionArr = this.getInitPositionArr();
     var _this = this;
     for (var i = 0; i < this.lineCount; i++) {
@@ -112,7 +112,7 @@ JigsawPuzzle.prototype.initGame = function () {
     this.placeImage();
 }
 
-var game = new JigsawPuzzle('container', 1, './images/kenan.png');
+var game = new Puzzle('container', 1, './images/kenan.png');
 game.initGame();
 
 
