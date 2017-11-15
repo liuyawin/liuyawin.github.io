@@ -30,7 +30,6 @@ Amplifier.prototype = {
         //this.node.on('mouseleave', this.handleMouseLeave.bind(this));
     },
     handleMouseEnter: function () {
-        console.log('mouse enter...');
         var _this = this;
         this.createMask();
         this.createBigImageArea();
@@ -45,7 +44,6 @@ Amplifier.prototype = {
             }
             //如果移出去了
             if (!_this.checkPosition()) {
-                console.log('mouse leave...');
                 _this.destroyMask();
                 _this.destroyBigImageArea();
                 $(document).unbind('mousemove', handleMouseMove);
