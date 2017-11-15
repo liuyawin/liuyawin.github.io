@@ -72,13 +72,27 @@ Amplifier.prototype = {
         this.mask.remove();
     },
     moveMask: function () {
-        //console.log(this.checkXBoundary())
-        if (this.checkXBoundary()) {
+        if (this.mousePosition.x - this.nodePosition.left < this.maskWidth / 2) {//检测边界情况作特殊处理
+            this.mask.css('left', 0);
+        } else if (this.mousePosition.x - this.nodePosition.left > this.node.width() - this.maskWidth / 2) {//检测边界情况作特殊处理
+            this.mask.css('left', this.node.width() - this.maskWidth);
+        } else{
             this.mask.css('left', this.mousePosition.x - this.nodePosition.left - this.maskWidth / 2);
         }
-        if (this.checkYBoundary()) {
+
+        if (this.mousePosition.y - this.nodePosition.top < this.maskHeight / 2) {//检测边界情况作特殊处理
+            this.mask.css('top', 0);
+        } else if (this.mousePosition.y - this.nodePosition.top > this.node.height() - this.maskHeight / 2) {//检测边界情况作特殊处理
+            this.mask.css('top', this.node.height() - this.maskHeight);
+        } else{
             this.mask.css('top', this.mousePosition.y - this.nodePosition.top - this.maskHeight / 2);
         }
+        // if (this.checkXBoundary()) {
+        //     this.mask.css('left', this.mousePosition.x - this.nodePosition.left - this.maskWidth / 2);
+        // }
+        // if (this.checkYBoundary()) {
+        //     this.mask.css('top', this.mousePosition.y - this.nodePosition.top - this.maskHeight / 2);
+        // }
     },
     moveBigImage: function () {
         var x = (-this.mask.offset().left + this.nodePosition.left) * this.times;
@@ -93,12 +107,6 @@ Amplifier.prototype = {
     },
     destroyBigImageArea: function () {
         this.bigImageArea.remove();
-    },
-    checkXBoundary: function () {
-        return this.mousePosition.x - this.nodePosition.left > this.maskWidth / 2 && this.mousePosition.x - this.nodePosition.left < this.node.width() - this.maskWidth / 2;
-    },
-    checkYBoundary: function () {
-        return this.mousePosition.y - this.nodePosition.top > this.maskHeight / 2 && this.mousePosition.y - this.nodePosition.top < this.node.height() - this.maskHeight / 2;
     }
 }
 
