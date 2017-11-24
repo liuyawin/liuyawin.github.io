@@ -43,10 +43,8 @@ CircleText.prototype = {
         var _this = this;
         for (var i = 0; i < _this.imgsInfo.length; i++) {
             var img = _this.imgsInfo[i];
-            var currentAngle = _this.currentAngle;
-            var initAngle = parseInt(img.initAngle);
-            var top = _this.nodeWH / 2 - img.initRadius * Math.sin((currentAngle + initAngle) * 2 * Math.PI / 360) - img.height / 2;
-            var left = _this.nodeWH / 2 - img.initRadius * Math.cos((currentAngle + initAngle) * 2 * Math.PI / 360) - img.width / 2;
+            var top = _this.nodeWH / 2 - img.initRadius * Math.sin((_this.currentAngle + img.initAngle) * 2 * Math.PI / 360) - img.height / 2;
+            var left = _this.nodeWH / 2 - img.initRadius * Math.cos((_this.currentAngle + img.initAngle) * 2 * Math.PI / 360) - img.width / 2;
             img.node.css({
                 left: left,
                 top: top,
@@ -60,8 +58,8 @@ CircleText.prototype = {
             var img = {};
             var $img = $(this);
             img.node = $img;
-            img.initAngle = $img.attr('data-angle') || 0;
-            img.initRadius = $img.attr('data-radius') || 0;
+            img.initAngle = parseInt($img.attr('data-angle')) || 0;
+            img.initRadius = parseInt($img.attr('data-radius')) || 0;
             img.width = $img.outerWidth();
             img.height = $img.outerHeight();
             _this.imgsInfo.push(img);
