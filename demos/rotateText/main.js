@@ -35,7 +35,7 @@ CircleText.prototype = {
     },
     setInitPosition: function(){
         this.setImagePostion();
-        for (var i = 0; i < _this.imgsInfo.length; i++) {
+        for (var i = 0; i < this.imgsInfo.length; i++) {
             this.imgsInfo[i].node.removeClass('hidden');
         }
     },
