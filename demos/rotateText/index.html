@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div class="img_box">
+            <img src="img/app.png" alt="app" data-angle="0" data-radius="160">
+            <img src="img/apple.png" alt="apple" data-angle="280" data-radius="120">
+            <img src="img/arto.png" alt="arto" data-angle="80" data-radius="100">
+            <img src="img/aws.png" alt="aws" data-angle="120" data-radius="180">
+            <img src="img/baidu.png" alt="baidu" data-angle="240" data-radius="130">
+        </div>
+        <div class="center_block"></div>
+        <button id="placeBtn">归位</button>
+    </div>
+    <script src="jquery-1.11.3.min.js"></script>
+    <script src="jquery.rotate.js"></script>
+    <script src="main.js"></script>
+    <script>
+        var circleText = $('#container').circleText();
+        $('#placeBtn').on('click', function () {
+            circleText.stop();
+            var $imgs = $('.img_box img');
+            $.each($imgs, function (index) {
+                var left = 90 + index * 60 + 'px';
+                $(this).animate({ left: left, top: '420px', rotate: '360' }, 1000);
+            });
+        })
+    </script>
+</body>
+
+</html>

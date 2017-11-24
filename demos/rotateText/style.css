@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    width: 480px;
+    /* height: 540px; */
+    margin: 36px auto;
+    text-align: center;
+    position: relative;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.center_block{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: red;
+    border-radius: 10px;
+    top: 230px;
+    left: 230px;
+}
+
+.img_box{
+    height: 480px;
+    border: 1px solid red;
+    position: relative;
+}
+
+.img_box img{
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    /* border: 1px solid red; */
+}
+
+#container button{
+    margin-top: 12px;
+    width: 81px;
+    height: 32px;
+    font-size: 14px;
+}
