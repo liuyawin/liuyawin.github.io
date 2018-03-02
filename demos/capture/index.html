@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>截图工具</title>
+    <style>
+        .capture_container{
+            margin: 36px auto;
+        }
+    </style>
+    <link rel="stylesheet" href="capture.css">
+</head>
+<body>
+    <div class="capture_container">
+        <div class="upload_picture">
+            <a href="javascript:;" class="upload_btn">
+                <input type="file" name="pic-selector" class="file_btn" >
+                请选择图片
+            </a>
+            <span class="error hidden" name="error-text">文件格式或大小错误</span>
+        </div>
+        <div class="capture_box" name="origin-img-box">
+                <img name="origin-img">
+                <div class="mask" name="origin-mask"></div>
+        </div>
+        <div class="show_box" name="show_box">
+                <div class="small_img"><img ></div>
+                <div class="medium_img"><img ></div>
+                <div class="big_img"><img ></div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="capture.js"></script>
+    <script type="text/javascript">
+        $('.capture_container').capture();
+    </script>
+</body>
+</html>

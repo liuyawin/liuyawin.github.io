@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #progress{
+            width: 100px;
+            height: 20px;
+            border: 1px solid #7A7A7A;
+            border-radius: 8px;
+            position: relative;
+        }
+        #progress #doneLen{
+            height: 20px;
+            border-radius: 8px;
+            position: absolute;
+            background-color: #B9D3EE;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="progress">
+        <div id="doneLen"></div>
+    </div>
+    <button id="btn">显示</button>
+
+    <script type="text/javascript" src="../jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="loader.js"></script>
+</body>
+</html>
