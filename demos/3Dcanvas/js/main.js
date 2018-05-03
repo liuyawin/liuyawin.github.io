@@ -41,7 +41,7 @@ for (var i = 0; i < ballCount; i++) {
     options.R = 10 + 10 * Math.random();
     options.xPos = 200 * Math.random() - 100;
     options.yPos = 100 * Math.random() - 50;
-    options.zPos = 60 * Math.random() - 30;
+    options.zPos = 20 * Math.random() - 10;
     var ball = new Ball(options);
     ballArr.push(ball);
 }

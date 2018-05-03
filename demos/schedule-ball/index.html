@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>进度球</title>
+</head>
+<body>
+    <canvas id="canvas" width="250" height="250"></canvas>
+    <script src="js/ScheduleBall.js"></script>
+    <script>
+        var ball = new ScheduleBall({
+            id: 'canvas',
+            staffRange: 15,
+            selfRange: 25
+        });
+        setTimeout(function(){
+            ball.pause();
+        }, 3000);
+        setTimeout(function(){
+            ball.resume();
+        }, 6000);
+    </script>
+</body>
+</html>
